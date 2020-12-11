@@ -18,15 +18,24 @@ public class NetworkController : MonoBehaviourPunCallbacks
     [SerializeField]
     private GameObject startButton;
 
+    [Tooltip("The setting button game object")]
+    [SerializeField]
+    private GameObject settingButton;
+
     [Tooltip("The exit button game object")]
     [SerializeField]
     private GameObject exitButton;
+
+    [Tooltip("The confirm button game object")]
+    [SerializeField]
+    private GameObject confirmButton;
 
     [Tooltip("Text to display the connection status")]
     [SerializeField]
     private TextMeshProUGUI connectionText;
 
-
+    public GameObject startMenu;
+    public GameObject settingMenu;
 
 
 
@@ -54,11 +63,31 @@ public class NetworkController : MonoBehaviourPunCallbacks
     public void StartClick()
     {
         Connect();
+        Debug.Log("Start button clicked");
+
+        //needa disable setting and exit button
+    }
+
+    public void SettingClick()
+    {
+        Debug.Log("setting button clicked");
+
+        startMenu.SetActive(false);
+        settingMenu.SetActive(true);        
+    }
+
+    public void ConfirmClick()
+    {
+        Debug.Log("Confirm button clicked");
+
+        startMenu.SetActive(true);
+        settingMenu.SetActive(false);
     }
 
     public void ExitClick()
     {
         //connectionText.text = "Program Exit";
+        Debug.Log("Exit button clicked");
         PhotonNetwork.Disconnect();
 
         #if UNITY_EDITOR
