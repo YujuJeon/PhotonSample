@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "377582580389",
+    "project_id": "photon-backend-sample",
+    "storage_bucket": "photon-backend-sample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377582580389:android:8f0925b0fb3a5709f6934c",
+        "android_client_info": {
+          "package_name": "com.yuju.PhotonPractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377582580389-ait5hhttsfdbp8pbc7p1qgr5v1bngck1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yuju.PhotonPractice",
+            "certificate_hash": "f6536cbe1464c3e5df5fb40b6ef6bd3b53bb18bd"
+          }
+        },
+        {
+          "client_id": "377582580389-ov70979hb82fg6rl3d7hobh718894b3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqrXAzRAAyYxwbZ_n-0fBo7a_eFo65u4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377582580389-ov70979hb82fg6rl3d7hobh718894b3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -273,3 +273,17 @@ D:\Git\PhotonSample\Photon_Practice\obj\Debug\PhotonRealtime.csproj.CoreCompileI
 D:\Git\PhotonSample\Photon_Practice\obj\Debug\PhotonRealtime.csproj.CopyComplete
 D:\Git\PhotonSample\Photon_Practice\obj\Debug\PhotonRealtime.dll
 D:\Git\PhotonSample\Photon_Practice\obj\Debug\PhotonRealtime.pdb
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Firebase.App.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Firebase.Auth.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Firebase.Editor.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Firebase.Platform.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Firebase.TaskExtension.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Google.IOSResolver_v1.2.162.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Google.JarResolver_v1.2.162.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Google.MiniJson.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Google.PackageManagerResolver_v1.2.162.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Google.VersionHandler.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Google.VersionHandlerImpl_v1.2.162.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Unity.Compat.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\Unity.Tasks.dll
+D:\Git\PhotonSample\Photon_Practice\Temp\bin\Debug\UnityEditor.WebGL.Extensions.dll
