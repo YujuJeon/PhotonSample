@@ -9,10 +9,14 @@ using UnityEngine.UI;
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
     private readonly string gameVersion = "1";
+    private GameObject defaultPage;
+    private GameObject settingPage;
 
     public TextMeshProUGUI connectionInfoText;
     public TextMeshProUGUI playerText;
     public Button joinButton;
+    public Button settingButton;
+    public Button confirmButton;
     public Button observerButton;
     public GameObject myself;
 
@@ -26,15 +30,28 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
 
         joinButton.interactable = false;
-        connectionInfoText.text = "Connecting To Master Server...";
+        defaultPage = joinButton.transform.parent.gameObject;
+        settingPage = confirmButton.transform.parent.gameObject;
 
-        
+        connectionInfoText.text = "Connecting To Master Server...";        
     }
 
     //public void LeaveLobby()
     //{
     //    PhotonNetwork.LoadLevel("SignIn");
     //}
+
+    public void Setting()
+    {
+        defaultPage.SetActive(false);
+        settingPage.SetActive(true);
+    }
+
+    public void Confirm()
+    {
+        defaultPage.SetActive(true);
+        settingPage.SetActive(false);
+    }
 
     public void Connect()
     {
@@ -56,7 +73,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         joinButton.interactable = true;
-        connectionInfoText.text = "Online : Connected to Master Server";
+        connectionInfoText.text = "Online : Connected to " + PhotonNetwork.ServerAddress;
 
         PhotonNetwork.LocalPlayer.NickName = playerText.text;
         Debug.Log(PhotonNetwork.LocalPlayer.NickName);

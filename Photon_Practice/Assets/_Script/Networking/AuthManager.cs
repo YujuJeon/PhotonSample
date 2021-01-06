@@ -15,7 +15,8 @@ public class AuthManager : MonoBehaviour
 
     public TMP_InputField emailField;
     public TMP_InputField passwordField;
-    public Button signinButton;
+    
+    public Button signinButton;    
 
     public static FirebaseApp firebaseApp;
     public static FirebaseAuth firebaseAuth;
@@ -53,7 +54,7 @@ public class AuthManager : MonoBehaviour
             }
         );
     }
-
+        
     public void Signin()
     {
         if (!IsFirebaseReady || IsSignInOnProgress || User != null)
